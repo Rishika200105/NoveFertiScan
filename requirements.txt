@@ -7,3 +7,4 @@ scikit-learn
 openpyxl
 biopython
 plotly
+reportlab
