@@ -7,16 +7,20 @@ from matplotlib.patches import Wedge, Circle
 from datetime import datetime, timedelta
 import textwrap
 import io
+import os
+from PIL import Image
 
+logo_path = os.path.join("assets", "Logo.png")
 # ============================
 # 🎯 Page Config & Theming
 # ============================
+# Use as page icon
 st.set_page_config(
     page_title="NovoFertiScan",
     layout="wide",
-    page_icon=r"C:\Users\Rishika Saha\Downloads\Minor Project Sem 9\NovoFertiScan\Logo.png",
-    initial_sidebar_state="expanded",
+    page_icon=logo_path,   # page icon from assets
 )
+
 
 
 CUSTOM_CSS = """
@@ -125,7 +129,7 @@ import streamlit as st
 # =========================
 # Logo + Title Card Header
 # =========================
-logo_path = r"C:\Users\Rishika Saha\Downloads\Minor Project Sem 9\NovoFertiScan\Logo.png"
+logo_path = os.path.join("assets", "Logo.png")
 
 # Convert image to base64
 with open(logo_path, "rb") as f:
