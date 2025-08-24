@@ -12,3 +12,10 @@ biopython
 scikit-learn
 seaborn
 io
+streamlit
+pandas
+numpy
+matplotlib
+scikit-learn
+pillow
+
